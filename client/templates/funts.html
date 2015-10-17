@@ -1,0 +1,10 @@
+<template name="funts">
+    <h1>Фанты - онлайн</h1>
+    {{> funtsCategories}}
+    {{#if funt}}
+        <p>{{funt.funt}}</p>
+        <a role="button" href="#" class="btn btn-success" id="doit">Сделано</a>
+    {{else}}
+        <p>Нет фантов в данной категории</p>
+    {{/if}}
+</template>
