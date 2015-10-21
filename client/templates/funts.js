@@ -10,7 +10,7 @@ Template.funts.helpers({
   });
 
 Template.funts.events({
-    'click #doit': function (e) {
+    'click #turnFront': function (e) {
         var categories = $('input[name="category"]:checked').map(function() {
             return parseInt(this.value, 10);
         }).get();
@@ -26,5 +26,10 @@ Template.funts.events({
             });
             Session.set('funt', funt);
         }
+        $('#card').toggleClass('flip');
+    },
+    'click #turnBack': function (e) {
+        $('#card').toggleClass('flip');
     }
+
 });

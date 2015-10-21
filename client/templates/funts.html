@@ -1,12 +1,18 @@
 <template name="funts">
     <h1>Фанты - онлайн</h1>
     {{> funtsCategories}}
-    <div class="container">
-    {{#if funt}}
-        <h1>{{funt.funt}}</h1>
-        <p><a role="button" href="#" class="btn btn-success" id="doit">Еще</a></p>
-            {{else}}
-        Нет фантов в данной категории
-            {{/if}}
+    <div class="container funt">
+        <div id="card">
+            <figure class="back" id="turnFront"></figure>
+            <figure class="front" id="turnBack">
+                {{#if funt}}
+                    <figcaption>{{funt.funt}}</figcaption>
+                {{else}}
+                    <figcaption>Нет фантов в данной категории</figcaption>
+                {{/if}}
+            </figure>
         </div>
+    </div>
 </template>
+
+
