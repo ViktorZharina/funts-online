@@ -13,8 +13,10 @@
 
 #card { /* поворачивать будем общий контейнер */
     margin: 100px auto auto 100px;
-    width: 100%;
-    height: 100%;
+    width: 366px;
+    font-size: 32px;
+    font-family: Comic Sans MS;
+    height: 589px;
     position: absolute;
 
     -webkit-transition: -webkit-transform 0.5s;
@@ -38,7 +40,8 @@
 }
 
 figcaption {
-    margin: 10% ;
+    margin-top: 75px;
+    text-align: center;
 }
 
 figure {
@@ -53,11 +56,11 @@ figure {
     backface-visibility: hidden;	/* если элемент "отвернулся" от пользователя, контент этого элемента не виден */
 }
 .back {
-    background: url(img/card-back.png);
+    background: url(img/card_back.png);
     background-repeat: no-repeat;
 }
 .front {
-    background: url(img/fanti-1.jpg);
+    background: url(img/card_front.png);
     background-repeat: no-repeat;
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
