@@ -1,23 +1,9 @@
-.container .funt{
-    margin: 100px auto auto 100px;
-    position: relative;
-    width: 190px;
-    height: 266px;
-    /* задаем глубину сцене */
-    -webkit-perspective: 600px; /* webkit */
-    -moz-perspective: 600px; /* mozilla */
-    -ms-perspective: 600px; /* IE 10 */
-    -o-perspective: 600px; /* opera когда-то тоже должна начать понимать */
-    perspective: 600px;	/* св-во по стандартам */
-}
-
 #card { /* поворачивать будем общий контейнер */
-    margin: 100px auto auto 100px;
+    margin: 0 auto;
     width: 366px;
+    height: 589px;
     font-size: 32px;
     font-family: Comic Sans MS;
-    height: 589px;
-    position: absolute;
 
     -webkit-transition: -webkit-transform 0.5s;
     -moz-transition: -moz-transform 0.5s;
@@ -31,6 +17,7 @@
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;	/* указываем, что дочерние элементы находятся в 3D пространстве */
 }
+
 #card.flip {	/* добавляя этот класс, поворачиваем контейнер на 180 градусов */
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
@@ -55,10 +42,12 @@ figure {
     -o-backface-visibility: hidden;
     backface-visibility: hidden;	/* если элемент "отвернулся" от пользователя, контент этого элемента не виден */
 }
+
 .back {
     background: url(img/card_back.png);
     background-repeat: no-repeat;
 }
+
 .front {
     background: url(img/card_front.png);
     background-repeat: no-repeat;
