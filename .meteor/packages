@@ -16,7 +16,6 @@ standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-autopublish             # Publish all data to the clients (for prototyping)
 iron:router
 sacha:spin
 aldeed:collection2
@@ -29,3 +28,5 @@ accounts-oauth
 mrt:accounts-vk
 email
 matb33:bootstrap-carousel
+check
+houston:admin
