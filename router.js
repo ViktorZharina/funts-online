@@ -13,3 +13,4 @@ Router.route('/', {
 });
 
 Router.route('/about');
+Router.route('/insertFuntsForm');

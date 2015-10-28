@@ -6,6 +6,9 @@
             </div>
             <div class="navbar-collapse collapse text-center">
                 <ul class="nav navbar-nav">
+                    {{#if currentUser}}
+                        <li><a href="/insertFuntsForm">Добавить фант</a></li>
+                    {{/if}}
                     <li><a href="/about">О проекте</a></li>
                 </ul>
             </div>

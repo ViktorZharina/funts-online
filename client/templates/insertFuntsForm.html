@@ -1,0 +1,11 @@
+<template name="insertFuntsForm">
+  {{#autoForm collection="Funts" id="insertFuntsForm" type="insert" resetOnSuccess=true trimStrings=true}}
+    <fieldset>
+      <legend>Добавить фант</legend>
+      {{> afQuickField name='funt'}}
+      {{> afQuickField name='author'}}
+      {{> afQuickField name='category' firstOption="Выберите категорию" options=categoryOptions}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Добавить</button>
+  {{/autoForm}}
+</template>
