@@ -3,6 +3,6 @@
  */
 
 if (FuntsCategories.find({}).count() === 0) {
-    FuntsCategories.insert({categoryId: FUN, name: funtsCategoryObj.FUN, description: 'Веселье'});
-    FuntsCategories.insert({categoryId: CREATIVE, name: funtsCategoryObj.CREATIVE, description: 'Творчество'});
+    FuntsCategories.insert({name: 'FUN', description: 'Веселье'});
+    FuntsCategories.insert({name: 'CREATIVE', description: 'Творчество'});
 }

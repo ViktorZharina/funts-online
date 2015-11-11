@@ -1,9 +1,65 @@
+body {
+    font-family: Comic Sans MS;
+}
+
+label {
+    width: 198px;
+    height: 150px;
+    display: block;
+    position: relative;
+}
+
+input[type="checkbox"].FUN + span {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: url(img/fun_color.jpg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+input[type="checkbox"].FUN:checked + span { 
+    background: url(img/fun_black.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    position: absolute;
+    text-align:center;
+    font-size: 20px;
+    transition: 0.5s Ease;
+}
+
+input[type="checkbox"].CREATIVE + span {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: url(img/risovanie_color.jpg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+input[type="checkbox"].CREATIVE:checked + span { 
+    background: url(img/risovanie_black.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    position: absolute;
+    text-align:center;
+    font-size: 20px;
+    transition: 0.5s Ease;
+}
+
+.category-description {
+    font-size: 26px;
+}
+
+
 #card { /* поворачивать будем общий контейнер */
     margin: 0 auto;
     width: 366px;
     height: 589px;
     font-size: 32px;
-    font-family: Comic Sans MS;
+    /*font-family: Comic Sans MS;*/
 
     -webkit-transition: -webkit-transform 0.5s;
     -moz-transition: -moz-transform 0.5s;

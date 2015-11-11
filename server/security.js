@@ -1,0 +1,1 @@
+Funts.permit('insert').ifLoggedIn().apply();

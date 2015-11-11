@@ -1,9 +1,14 @@
 <template name="funtsCategories">
     <div class="container-fluid">
-        <div class="btn-group">
+        <div class="btn-group holder">
             {{#each funtsCategories}}
-                <label class="checkbox-inline"><input type="checkbox" name="category" value="{{categoryId}}">{{name}}</label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="{{name}}" name="category" value="{{name}}"><span class="category-description"></span>
+                </label>
             {{/each}}
+            <div class="go-top">
+                <p>{{description}}</p>
+            </div>
         </div>
     </div>
 </template>
